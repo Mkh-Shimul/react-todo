@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isLogged: false
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState(prevState => {
+      return {
+        isLogged: !prevState.isLogged
+      };
+    });
+  }
+  render() {
+    return (
+      <div>
+        <button onClick={this.handleClick}>
+          {this.state.isLogged ? "Login" : "Logout"}
+        </button>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {this.state.isLogged ? "Please Login" : "After work you can logout!!"}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
