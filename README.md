@@ -1,7 +1,5 @@
 This is my very first react project. I want to build the famous todo app with react.
 
-In the project directory, you can run:
-
 ### `How to use`
 
 Clone the repo<br />
