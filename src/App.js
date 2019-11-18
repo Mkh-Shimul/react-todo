@@ -22,7 +22,9 @@ class App extends Component {
           {this.state.isLogged ? "Login" : "Logout"}
         </button>
         <p>
-          {this.state.isLogged ? "Please Login" : "After work you can logout!!"}
+          {this.state.isLogged
+            ? "Please Login to the system"
+            : "You can logout!!"}
         </p>
       </div>
     );
