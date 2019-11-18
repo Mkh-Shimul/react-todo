@@ -6,8 +6,7 @@ In the project directory, you can run:
 
 Clone the repo<br />
 go to the directory where you've cloned it <br />
-run <b>npm start</b>
-Runs the app in the development mode.<br />
+run <b>npm start</b> <br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
